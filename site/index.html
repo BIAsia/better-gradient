@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>better-gradient</title>
+    <meta
+      name="description"
+      content="Family-first gradient skill for Codex, Claude Code, and other agentic coding tools."
+    />
+    <link rel="canonical" href="https://better-gradient-red.vercel.app" />
+    <meta property="og:title" content="better-gradient" />
+    <meta
+      property="og:description"
+      content="Family-first gradient skill for Codex, Claude Code, and other agentic coding tools."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://better-gradient-red.vercel.app" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="better-gradient" />
+    <meta
+      name="twitter:description"
+      content="Family-first gradient skill for Codex, Claude Code, and other agentic coding tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-a"></div>
+    <div class="page-glow page-glow-b"></div>
+    <div class="page-grid"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-mark"></span>
+        <span>better-gradient</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#compare">Before / After</a>
+        <a href="#families">Families</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/BIAsia/better-gradient" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Universal skill for agentic coding tools</div>
+          <h1>Give your agent a real gradient vocabulary.</h1>
+          <p class="hero-text">
+            <code>better-gradient</code> helps Codex, Claude Code, Cursor, Gemini CLI, and
+            other agentic tools choose gradients by hue family first, then apply the right
+            interpolation mode with offline presets that work after install.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#install">Install the skill</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/BIAsia/better-gradient"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View repository
+            </a>
+          </div>
+          <div class="agent-strip">
+            <span>Works with</span>
+            <ul id="agent-list" class="agent-list"></ul>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="panel-label">What your agent gets</div>
+          <div class="hero-stack">
+            <article class="mini-card">
+              <div class="mini-card-title">Family-first selection</div>
+              <p>Warm, blue-purple, green-yellow, contrast, dark, and light directions instead of random ramps.</p>
+            </article>
+            <article class="mini-card">
+              <div class="mini-card-title">OKLCH and OKLAB defaults</div>
+              <p>Short vivid ramps stay crisp, while atmospheric backgrounds keep layered depth.</p>
+            </article>
+            <article class="mini-card mini-card-gradient">
+              <div class="mini-card-title">Offline after install</div>
+              <p>No external repo, no API lookup, no runtime fetch. The preset pack ships with the skill.</p>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section id="compare" class="compare shell reveal">
+        <div class="section-heading">
+          <div class="eyebrow">Before / After</div>
+          <h2>From vague gradient asks to precise, agent-friendly picks.</h2>
+          <p>
+            The difference is not “more colorful output.” It is giving the model a shared
+            language for family, mood, interpolation, and exact CSS.
+          </p>
+        </div>
+
+        <div id="example-tabs" class="example-tabs" role="tablist" aria-label="Example briefs"></div>
+
+        <div class="compare-grid">
+          <article class="compare-card before-card">
+            <div class="card-kicker">Before</div>
+            <h3>Generic prompt, generic ramp</h3>
+            <div class="prompt-block">
+              <div class="prompt-label">Prompt</div>
+              <p>“Make me a nice gradient background for my landing page.”</p>
+            </div>
+            <div class="preview-window preview-before">
+              <div class="preview-before-top">Welcome to Our Platform</div>
+              <div class="preview-before-pill">Get Started</div>
+              <div class="preview-before-tags">
+                <span>purple bias</span>
+                <span>no family logic</span>
+                <span>vague copy</span>
+              </div>
+            </div>
+            <ul class="check-list muted-list">
+              <li>No hue family was specified.</li>
+              <li>No reason to choose OKLCH vs OKLAB.</li>
+              <li>Output collapses into the same purple gradient reflex.</li>
+            </ul>
+          </article>
+
+          <article class="compare-card after-card">
+            <div class="card-kicker">After</div>
+            <h3 id="after-title">Family-first result</h3>
+            <div class="prompt-block">
+              <div class="prompt-label">Prompt</div>
+              <p id="after-prompt"></p>
+            </div>
+
+            <div class="after-layout">
+              <div class="preview-window preview-after">
+                <div id="after-preview" class="preview-gradient"></div>
+                <div class="preview-overlay">
+                  <div class="preview-badge" id="after-mode"></div>
+                  <div class="preview-meta">
+                    <div id="after-name" class="preview-name"></div>
+                    <div id="after-family" class="preview-family"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="selection-card">
+                <div class="selection-label">Why this was picked</div>
+                <ul id="after-reasons" class="check-list"></ul>
+              </div>
+            </div>
+
+            <div class="code-stack">
+              <div class="code-head">
+                <span>Returned CSS</span>
+                <button id="copy-install" class="copy-button" type="button" data-copy="npx skills add BIAsia/better-gradient -g -y">
+                  Copy install
+                </button>
+              </div>
+              <pre id="after-css" class="code-block"></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="features shell reveal">
+        <div class="section-heading">
+          <div class="eyebrow">What the skill changes</div>
+          <h2>It improves prompting structure, not just the final colors.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-number">01</div>
+            <h3>Match by family first</h3>
+            <p>
+              The model stops guessing from “nice” and starts from intent: blue-purple tech,
+              skincare light, bold contrast, moody dark, and more.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">02</div>
+            <h3>Choose interpolation with intent</h3>
+            <p>
+              <code>oklch</code> for clean vivid ramps. <code>oklab</code> for deeper,
+              multi-stop atmospheres. The choice becomes explicit and reusable.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">03</div>
+            <h3>Ship offline</h3>
+            <p>
+              Everything important lives inside the skill repo, so your agent can keep working
+              in local environments without external gradient tooling.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="families" class="families shell reveal">
+        <div class="section-heading">
+          <div class="eyebrow">Preset families</div>
+          <h2>Six structured families plus vivid OKLCH pairs.</h2>
+          <p>These are the vocabulary anchors your agent can steer against instead of freehand guessing.</p>
+        </div>
+        <div id="family-grid" class="family-grid"></div>
+      </section>
+
+      <section id="install" class="install shell reveal">
+        <div class="install-copy">
+          <div class="eyebrow">Install anywhere</div>
+          <h2>One command for Codex, Claude Code, and the rest of the Skills CLI ecosystem.</h2>
+          <p>
+            If your tool supports <code>npx skills add</code>, it can install
+            <code>better-gradient</code>. The skill itself stays agent-neutral and only depends
+            on the shared skill format.
+          </p>
+          <ul class="check-list">
+            <li>Works as a normal skill repo on GitHub.</li>
+            <li>Installs with the Skills CLI instead of a custom runtime.</li>
+            <li>Leaves the gradient logic fully offline after install.</li>
+          </ul>
+        </div>
+        <div class="install-panel">
+          <div class="install-command-label">Recommended install</div>
+          <pre class="install-command">npx skills add BIAsia/better-gradient -g -y</pre>
+          <div class="install-note">Restart your agent after install so the skill is picked up immediately.</div>
+          <div class="link-row">
+            <a href="https://github.com/BIAsia/better-gradient" target="_blank" rel="noreferrer">GitHub repo</a>
+            <a href="https://github.com/BIAsia/better-gradient/blob/main/README.md" target="_blank" rel="noreferrer">Repo README</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq shell reveal">
+        <div class="section-heading">
+          <div class="eyebrow">FAQ</div>
+          <h2>What teams usually ask.</h2>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>Is this only for Codex?</h3>
+            <p>No. It is written as a standard skill repo and presented for general agentic coding tools that support the shared skills workflow.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Does it need internet after install?</h3>
+            <p>No. The preset catalog and selection logic are bundled in the repo, so usage is fully offline once installed.</p>
+          </article>
+          <article class="faq-card">
+            <h3>What does the site demonstrate?</h3>
+            <p>Not just prettier gradients. It shows how structured prompts, family names, and interpolation choices reduce generic AI output.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>better-gradient</span>
+      <span>Offline gradient skill for agentic coding tools</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>

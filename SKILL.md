@@ -1,6 +1,6 @@
 ---
 name: better-gradient
-description: Design and suggest offline gradient presets from a bundled catalog, prioritizing hue-family matching before inventing new ramps and defaulting to OKLCH or OKLAB interpolation. Use when Codex needs to create or refine 渐变, gradient backgrounds, hero color ramps, brand color directions, CSS or SVG gradient code, or palette suggestions based on 色系, 氛围, 蓝紫, 青绿, 暖色, 撞色, 暗色, 浅色, or other modern color-family cues.
+description: Design and suggest offline gradient presets from a bundled catalog, prioritizing hue-family matching before inventing new ramps and defaulting to OKLCH or OKLAB interpolation. Use when an agentic coding tool needs to create or refine 渐变, gradient backgrounds, hero color ramps, brand color directions, CSS or SVG gradient code, or palette suggestions based on 色系, 氛围, 蓝紫, 青绿, 暖色, 撞色, 暗色, 浅色, or other modern color-family cues.
 ---
 
 # Better Gradient

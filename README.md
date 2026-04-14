@@ -1,8 +1,11 @@
 # better-gradient
 
-A publishable Codex skill repo for choosing gradient presets by color family, with `oklch` and `oklab` as the default interpolation modes.
+A publishable, offline gradient skill for Codex, Claude Code, Cursor, Gemini CLI, and other agentic coding tools that use the shared Skills CLI workflow.
 
-This repository is structured as a single-skill repo, so `SKILL.md` lives at the repository root and can be installed directly with the Skills CLI.
+This repository contains two pieces:
+
+- the skill itself at the repo root
+- a standalone marketing/docs site in `site/`
 
 ## Install
 
@@ -20,6 +23,18 @@ npx skills add https://github.com/BIAsia/better-gradient -g -y
 
 After installing, restart Codex so the new skill is picked up immediately.
 
+## Works With
+
+- Codex CLI
+- Claude Code
+- Cursor
+- Gemini CLI
+- OpenCode
+- Kiro
+- VS Code Copilot
+- Antigravity
+- other tools supported by `npx skills add`
+
 ## What This Skill Does
 
 - Picks gradients by hue family first, instead of inventing colors from scratch every time
@@ -27,6 +42,13 @@ After installing, restart Codex so the new skill is picked up immediately.
 - Falls back to `oklab` for multi-stop atmospheric backgrounds and structured family presets
 - Ships with a fully bundled offline preset pack, so the skill works without network access after install
 - Does not depend on any external repo, API, or runtime download once installed
+
+## Site
+
+- Live site: `https://better-gradient-red.vercel.app`
+- Marketing/docs site source: `site/`
+- Intended deployment target: Vercel
+- Local preview: `cd site && python3 -m http.server 8123`
 
 ## Included Files
 
