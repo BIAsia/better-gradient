@@ -2509,7 +2509,7 @@
     }
   ],
   "catalog": {
-    "id": "gradient-presets-core",
+    "id": "better-gradient-core",
     "version": 1,
     "preferred_interpolation_order": [
       "oklch",

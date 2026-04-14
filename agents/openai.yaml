@@ -1,4 +1,4 @@
 interface:
-  display_name: "Gradient Presets"
+  display_name: "Better Gradient"
   short_description: "Offline OKLCH/OKLAB gradients by hue family"
-  default_prompt: "Use $gradient-presets to choose an offline OKLCH or OKLAB gradient preset for this color direction."
+  default_prompt: "Use $better-gradient to choose an offline OKLCH or OKLAB gradient preset for this color direction."

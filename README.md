@@ -1,4 +1,4 @@
-# gradient-presets
+# better-gradient
 
 A publishable Codex skill repo for choosing gradient presets by color family, with `oklch` and `oklab` as the default interpolation modes.
 
@@ -9,13 +9,13 @@ This repository is structured as a single-skill repo, so `SKILL.md` lives at the
 After you push this folder to GitHub, install it with:
 
 ```bash
-npx skills add BIAsia/gradient-presets -g -y
+npx skills add BIAsia/better-gradient -g -y
 ```
 
 You can also install from the GitHub URL directly:
 
 ```bash
-npx skills add https://github.com/BIAsia/gradient-presets -g -y
+npx skills add https://github.com/BIAsia/better-gradient -g -y
 ```
 
 After installing, restart Codex so the new skill is picked up immediately.
@@ -40,9 +40,9 @@ After installing, restart Codex so the new skill is picked up immediately.
 
 After installing, ask Codex things like:
 
-- `用 $gradient-presets 给我一个蓝紫科技感的 hero 背景`
-- `用 $gradient-presets 推荐 3 个护肤空气感的浅色渐变`
-- `Use $gradient-presets to find an oklch gradient for a bold poster CTA`
+- `用 $better-gradient 给我一个蓝紫科技感的 hero 背景`
+- `用 $better-gradient 推荐 3 个护肤空气感的浅色渐变`
+- `Use $better-gradient to find an oklch gradient for a bold poster CTA`
 
 You can also run the helper script directly inside the repo:
 
@@ -64,7 +64,7 @@ npx skills add . --list
 ```bash
 git init -b main
 git add .
-git commit -m "Add gradient-presets skill"
-git remote add origin https://github.com/BIAsia/gradient-presets.git
+git commit -m "Add better-gradient skill"
+git remote add origin https://github.com/BIAsia/better-gradient.git
 git push -u origin main
 ```
