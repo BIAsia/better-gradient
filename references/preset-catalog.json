@@ -1,0 +1,2526 @@
+{
+  "families": [
+    {
+      "id": "red-yellow",
+      "label": "RedYellow",
+      "cn_label": "红黄暖阳",
+      "summary": "Warm sunset, sunrise, peach, coral, glowing editorial gradients.",
+      "aliases": [
+        "warm",
+        "sunset",
+        "sunrise",
+        "peach",
+        "coral",
+        "orange",
+        "pink",
+        "warmth",
+        "红黄",
+        "暖色",
+        "夕阳",
+        "朝霞",
+        "日落",
+        "桃色",
+        "珊瑚",
+        "橙粉"
+      ],
+      "moods": [
+        "energetic",
+        "editorial",
+        "warm",
+        "romantic"
+      ],
+      "preset_ids": [
+        "oklab-red-yellow-burning-sky",
+        "oklab-red-yellow-dyed-horizon",
+        "oklab-red-yellow-peach-aura",
+        "oklab-red-yellow-peach-drop",
+        "oklab-red-yellow-warm-glow",
+        "oklab-red-yellow-sunset-glow"
+      ],
+      "group_name": "RedYellow"
+    },
+    {
+      "id": "blue-purple",
+      "label": "BluePurple",
+      "cn_label": "蓝紫夜空",
+      "summary": "Tech, cosmic, dreamy, twilight, cool atmospheric gradients.",
+      "aliases": [
+        "blue",
+        "purple",
+        "indigo",
+        "tech",
+        "cosmic",
+        "night",
+        "dreamy",
+        "蓝紫",
+        "科技",
+        "夜空",
+        "星空",
+        "梦幻",
+        "冷色",
+        "赛博",
+        "暮色"
+      ],
+      "moods": [
+        "cosmic",
+        "tech",
+        "dreamy",
+        "cool"
+      ],
+      "preset_ids": [
+        "oklab-blue-purple-awakening",
+        "oklab-blue-purple-glacial-glow",
+        "oklab-blue-purple-frost-dawn",
+        "oklab-blue-purple-stellar",
+        "oklab-blue-purple-dream-haze",
+        "oklab-blue-purple-twilight-sky"
+      ],
+      "group_name": "BluePurple"
+    },
+    {
+      "id": "green-yellow",
+      "label": "GreenYellow",
+      "cn_label": "青绿春日",
+      "summary": "Fresh, natural, spring, wellness, aquatic green-to-sky gradients.",
+      "aliases": [
+        "green",
+        "mint",
+        "spring",
+        "fresh",
+        "nature",
+        "wellness",
+        "aqua",
+        "青绿",
+        "春日",
+        "自然",
+        "清新",
+        "薄荷",
+        "湖水",
+        "草地"
+      ],
+      "moods": [
+        "fresh",
+        "nature",
+        "spring",
+        "wellness"
+      ],
+      "preset_ids": [
+        "oklab-green-yellow-tranquil-bay",
+        "oklab-green-yellow-mint-sugar",
+        "oklab-green-yellow-lakeside-glow",
+        "oklab-green-yellow-spring-sky",
+        "oklab-green-yellow-meadow",
+        "oklab-green-yellow-spring-days"
+      ],
+      "group_name": "GreenYellow"
+    },
+    {
+      "id": "contrast",
+      "label": "Contrast",
+      "cn_label": "高对比撞色",
+      "summary": "Playful, fashion, loud, colorful contrast gradients with punch.",
+      "aliases": [
+        "contrast",
+        "fashion",
+        "playful",
+        "vivid",
+        "editorial",
+        "撞色",
+        "高对比",
+        "活力",
+        "时尚",
+        "彩色",
+        "大胆"
+      ],
+      "moods": [
+        "playful",
+        "fashion",
+        "bold",
+        "vivid"
+      ],
+      "preset_ids": [
+        "oklab-contrast-floral",
+        "oklab-contrast-glacial-glow",
+        "oklab-contrast-waltz",
+        "oklab-contrast-midnight-bourbon",
+        "oklab-contrast-amber-mist",
+        "oklab-contrast-mint-blossom"
+      ],
+      "group_name": "Contrast"
+    },
+    {
+      "id": "dark",
+      "label": "Dark",
+      "cn_label": "暗色电影感",
+      "summary": "Cinematic, moody, luxurious, night-life and dense dark gradients.",
+      "aliases": [
+        "dark",
+        "moody",
+        "cinematic",
+        "luxury",
+        "night",
+        "暗色",
+        "电影感",
+        "高级",
+        "夜店",
+        "厚重",
+        "深色"
+      ],
+      "moods": [
+        "moody",
+        "cinematic",
+        "luxury",
+        "dense"
+      ],
+      "preset_ids": [
+        "oklab-dark-champagne",
+        "oklab-dark-dusky-horizon",
+        "oklab-dark-phantom",
+        "oklab-dark-jungle",
+        "oklab-dark-fading-night"
+      ],
+      "group_name": "Dark"
+    },
+    {
+      "id": "light",
+      "label": "Light",
+      "cn_label": "浅色空气感",
+      "summary": "Airy, skincare, soft, friendly, pastel-light gradients.",
+      "aliases": [
+        "light",
+        "airy",
+        "soft",
+        "pastel",
+        "skincare",
+        "浅色",
+        "空气感",
+        "轻盈",
+        "柔和",
+        "护肤",
+        "粉彩"
+      ],
+      "moods": [
+        "airy",
+        "soft",
+        "pastel",
+        "friendly"
+      ],
+      "preset_ids": [
+        "oklab-light-soft-bubble",
+        "oklab-light-tonic",
+        "oklab-light-peach",
+        "oklab-light-tangerine-sparkle",
+        "oklab-light-sun-flower"
+      ],
+      "group_name": "Light"
+    }
+  ],
+  "presets": [
+    {
+      "id": "oklab-red-yellow-burning-sky",
+      "mode": "oklab",
+      "family_id": "red-yellow",
+      "family_label": "RedYellow",
+      "name": "Burning Sky 烈空",
+      "summary": "Warm sunset, sunrise, peach, coral, glowing editorial gradients.",
+      "aliases": [
+        "warm",
+        "sunset",
+        "sunrise",
+        "peach",
+        "coral",
+        "orange",
+        "pink",
+        "warmth",
+        "红黄",
+        "暖色",
+        "夕阳",
+        "朝霞",
+        "日落",
+        "桃色",
+        "珊瑚",
+        "橙粉",
+        "burning"
+      ],
+      "tags": [
+        "energetic",
+        "editorial",
+        "warm",
+        "romantic"
+      ],
+      "stops": [
+        {
+          "id": "oklab-red-yellow-burning-sky-0",
+          "color": "#C4C4C4",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-red-yellow-burning-sky-1",
+          "color": "#E48D3E",
+          "position": 0.182692
+        },
+        {
+          "id": "oklab-red-yellow-burning-sky-2",
+          "color": "#DF250C",
+          "position": 0.408654
+        },
+        {
+          "id": "oklab-red-yellow-burning-sky-3",
+          "color": "#1F100D",
+          "position": 0.865385
+        },
+        {
+          "id": "oklab-red-yellow-burning-sky-4",
+          "color": "#000000",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-red-yellow-dyed-horizon",
+      "mode": "oklab",
+      "family_id": "red-yellow",
+      "family_label": "RedYellow",
+      "name": "Dyed Horizon 霞染",
+      "summary": "Warm sunset, sunrise, peach, coral, glowing editorial gradients.",
+      "aliases": [
+        "warm",
+        "sunset",
+        "sunrise",
+        "peach",
+        "coral",
+        "orange",
+        "pink",
+        "warmth",
+        "红黄",
+        "暖色",
+        "夕阳",
+        "朝霞",
+        "日落",
+        "桃色",
+        "珊瑚",
+        "橙粉",
+        "dyed"
+      ],
+      "tags": [
+        "energetic",
+        "editorial",
+        "warm",
+        "romantic"
+      ],
+      "stops": [
+        {
+          "id": "oklab-red-yellow-dyed-horizon-0",
+          "color": "#DDDFEE",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-red-yellow-dyed-horizon-1",
+          "color": "#DFCAAD",
+          "position": 0.264423
+        },
+        {
+          "id": "oklab-red-yellow-dyed-horizon-2",
+          "color": "#F8A4A4",
+          "position": 0.524038
+        },
+        {
+          "id": "oklab-red-yellow-dyed-horizon-3",
+          "color": "#F16041",
+          "position": 0.841346
+        },
+        {
+          "id": "oklab-red-yellow-dyed-horizon-4",
+          "color": "#EF2F6A",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-red-yellow-peach-aura",
+      "mode": "oklab",
+      "family_id": "red-yellow",
+      "family_label": "RedYellow",
+      "name": "Peach Aura 桃霓",
+      "summary": "Warm sunset, sunrise, peach, coral, glowing editorial gradients.",
+      "aliases": [
+        "warm",
+        "sunset",
+        "sunrise",
+        "peach",
+        "coral",
+        "orange",
+        "pink",
+        "warmth",
+        "红黄",
+        "暖色",
+        "夕阳",
+        "朝霞",
+        "日落",
+        "桃色",
+        "珊瑚",
+        "橙粉",
+        "peach"
+      ],
+      "tags": [
+        "energetic",
+        "editorial",
+        "warm",
+        "romantic"
+      ],
+      "stops": [
+        {
+          "id": "oklab-red-yellow-peach-aura-0",
+          "color": "#8FCCCD",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-red-yellow-peach-aura-1",
+          "color": "#DBD4CE",
+          "position": 0.0001
+        },
+        {
+          "id": "oklab-red-yellow-peach-aura-2",
+          "color": "#FF74B4",
+          "position": 0.543269
+        },
+        {
+          "id": "oklab-red-yellow-peach-aura-3",
+          "color": "#FF420A",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-red-yellow-peach-drop",
+      "mode": "oklab",
+      "family_id": "red-yellow",
+      "family_label": "RedYellow",
+      "name": "Peach Drop 桃露",
+      "summary": "Warm sunset, sunrise, peach, coral, glowing editorial gradients.",
+      "aliases": [
+        "warm",
+        "sunset",
+        "sunrise",
+        "peach",
+        "coral",
+        "orange",
+        "pink",
+        "warmth",
+        "红黄",
+        "暖色",
+        "夕阳",
+        "朝霞",
+        "日落",
+        "桃色",
+        "珊瑚",
+        "橙粉",
+        "peach"
+      ],
+      "tags": [
+        "energetic",
+        "editorial",
+        "warm",
+        "romantic"
+      ],
+      "stops": [
+        {
+          "id": "oklab-red-yellow-peach-drop-0",
+          "color": "#B9ECED",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-red-yellow-peach-drop-1",
+          "color": "#FF74B4",
+          "position": 0.783654
+        },
+        {
+          "id": "oklab-red-yellow-peach-drop-2",
+          "color": "#FF420A",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-red-yellow-warm-glow",
+      "mode": "oklab",
+      "family_id": "red-yellow",
+      "family_label": "RedYellow",
+      "name": "Warm Glow 晨曦",
+      "summary": "Warm sunset, sunrise, peach, coral, glowing editorial gradients.",
+      "aliases": [
+        "warm",
+        "sunset",
+        "sunrise",
+        "peach",
+        "coral",
+        "orange",
+        "pink",
+        "warmth",
+        "红黄",
+        "暖色",
+        "夕阳",
+        "朝霞",
+        "日落",
+        "桃色",
+        "珊瑚",
+        "橙粉",
+        "warm"
+      ],
+      "tags": [
+        "energetic",
+        "editorial",
+        "warm",
+        "romantic"
+      ],
+      "stops": [
+        {
+          "id": "oklab-red-yellow-warm-glow-0",
+          "color": "#E8CCAF",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-red-yellow-warm-glow-1",
+          "color": "#F8A808",
+          "position": 0.370192
+        },
+        {
+          "id": "oklab-red-yellow-warm-glow-2",
+          "color": "#F888A0",
+          "position": 0.721154
+        },
+        {
+          "id": "oklab-red-yellow-warm-glow-3",
+          "color": "#F598A4",
+          "position": 0.995192
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-red-yellow-sunset-glow",
+      "mode": "oklab",
+      "family_id": "red-yellow",
+      "family_label": "RedYellow",
+      "name": "Sunset Glow 夕霞",
+      "summary": "Warm sunset, sunrise, peach, coral, glowing editorial gradients.",
+      "aliases": [
+        "warm",
+        "sunset",
+        "sunrise",
+        "peach",
+        "coral",
+        "orange",
+        "pink",
+        "warmth",
+        "红黄",
+        "暖色",
+        "夕阳",
+        "朝霞",
+        "日落",
+        "桃色",
+        "珊瑚",
+        "橙粉",
+        "sunset"
+      ],
+      "tags": [
+        "energetic",
+        "editorial",
+        "warm",
+        "romantic"
+      ],
+      "stops": [
+        {
+          "id": "oklab-red-yellow-sunset-glow-0",
+          "color": "#B6D3EF",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-red-yellow-sunset-glow-1",
+          "color": "#E8CCAF",
+          "position": 0.399038
+        },
+        {
+          "id": "oklab-red-yellow-sunset-glow-2",
+          "color": "#F09050",
+          "position": 0.625
+        },
+        {
+          "id": "oklab-red-yellow-sunset-glow-3",
+          "color": "#F888A0",
+          "position": 0.903846
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-blue-purple-awakening",
+      "mode": "oklab",
+      "family_id": "blue-purple",
+      "family_label": "BluePurple",
+      "name": "Awakening 初醒",
+      "summary": "Tech, cosmic, dreamy, twilight, cool atmospheric gradients.",
+      "aliases": [
+        "blue",
+        "purple",
+        "indigo",
+        "tech",
+        "cosmic",
+        "night",
+        "dreamy",
+        "蓝紫",
+        "科技",
+        "夜空",
+        "星空",
+        "梦幻",
+        "冷色",
+        "赛博",
+        "暮色",
+        "awakening"
+      ],
+      "tags": [
+        "cosmic",
+        "tech",
+        "dreamy",
+        "cool"
+      ],
+      "stops": [
+        {
+          "id": "oklab-blue-purple-awakening-0",
+          "color": "#C9E8CD",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-blue-purple-awakening-1",
+          "color": "#60ACD4",
+          "position": 0.235577
+        },
+        {
+          "id": "oklab-blue-purple-awakening-2",
+          "color": "#4760A1",
+          "position": 0.524038
+        },
+        {
+          "id": "oklab-blue-purple-awakening-3",
+          "color": "#1F100D",
+          "position": 0.995192
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-blue-purple-glacial-glow",
+      "mode": "oklab",
+      "family_id": "blue-purple",
+      "family_label": "BluePurple",
+      "name": "Glacial Glow 冰川",
+      "summary": "Tech, cosmic, dreamy, twilight, cool atmospheric gradients.",
+      "aliases": [
+        "blue",
+        "purple",
+        "indigo",
+        "tech",
+        "cosmic",
+        "night",
+        "dreamy",
+        "蓝紫",
+        "科技",
+        "夜空",
+        "星空",
+        "梦幻",
+        "冷色",
+        "赛博",
+        "暮色",
+        "glacial"
+      ],
+      "tags": [
+        "cosmic",
+        "tech",
+        "dreamy",
+        "cool"
+      ],
+      "stops": [
+        {
+          "id": "oklab-blue-purple-glacial-glow-0",
+          "color": "#020C19",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-blue-purple-glacial-glow-1",
+          "color": "#253999",
+          "position": 0.331731
+        },
+        {
+          "id": "oklab-blue-purple-glacial-glow-2",
+          "color": "#007BDC",
+          "position": 0.591346
+        },
+        {
+          "id": "oklab-blue-purple-glacial-glow-3",
+          "color": "#B399F3",
+          "position": 0.860577
+        },
+        {
+          "id": "oklab-blue-purple-glacial-glow-4",
+          "color": "#EBCDCD",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-blue-purple-frost-dawn",
+      "mode": "oklab",
+      "family_id": "blue-purple",
+      "family_label": "BluePurple",
+      "name": "Frost Dawn 霜降",
+      "summary": "Tech, cosmic, dreamy, twilight, cool atmospheric gradients.",
+      "aliases": [
+        "blue",
+        "purple",
+        "indigo",
+        "tech",
+        "cosmic",
+        "night",
+        "dreamy",
+        "蓝紫",
+        "科技",
+        "夜空",
+        "星空",
+        "梦幻",
+        "冷色",
+        "赛博",
+        "暮色",
+        "frost"
+      ],
+      "tags": [
+        "cosmic",
+        "tech",
+        "dreamy",
+        "cool"
+      ],
+      "stops": [
+        {
+          "id": "oklab-blue-purple-frost-dawn-0",
+          "color": "#DDDFEE",
+          "position": 0.004808
+        },
+        {
+          "id": "oklab-blue-purple-frost-dawn-1",
+          "color": "#DAA1AF",
+          "position": 0.423077
+        },
+        {
+          "id": "oklab-blue-purple-frost-dawn-2",
+          "color": "#5572B6",
+          "position": 0.798077
+        },
+        {
+          "id": "oklab-blue-purple-frost-dawn-3",
+          "color": "#7C62A5",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-blue-purple-stellar",
+      "mode": "oklab",
+      "family_id": "blue-purple",
+      "family_label": "BluePurple",
+      "name": "Stellar 星幕",
+      "summary": "Tech, cosmic, dreamy, twilight, cool atmospheric gradients.",
+      "aliases": [
+        "blue",
+        "purple",
+        "indigo",
+        "tech",
+        "cosmic",
+        "night",
+        "dreamy",
+        "蓝紫",
+        "科技",
+        "夜空",
+        "星空",
+        "梦幻",
+        "冷色",
+        "赛博",
+        "暮色",
+        "stellar"
+      ],
+      "tags": [
+        "cosmic",
+        "tech",
+        "dreamy",
+        "cool"
+      ],
+      "stops": [
+        {
+          "id": "oklab-blue-purple-stellar-0",
+          "color": "#F6D0DB",
+          "position": 0.081731
+        },
+        {
+          "id": "oklab-blue-purple-stellar-1",
+          "color": "#0646CE",
+          "position": 0.625
+        },
+        {
+          "id": "oklab-blue-purple-stellar-2",
+          "color": "#182D7C",
+          "position": 0.769231
+        },
+        {
+          "id": "oklab-blue-purple-stellar-3",
+          "color": "#28173B",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-blue-purple-dream-haze",
+      "mode": "oklab",
+      "family_id": "blue-purple",
+      "family_label": "BluePurple",
+      "name": "Dream Haze 梦霭",
+      "summary": "Tech, cosmic, dreamy, twilight, cool atmospheric gradients.",
+      "aliases": [
+        "blue",
+        "purple",
+        "indigo",
+        "tech",
+        "cosmic",
+        "night",
+        "dreamy",
+        "蓝紫",
+        "科技",
+        "夜空",
+        "星空",
+        "梦幻",
+        "冷色",
+        "赛博",
+        "暮色",
+        "dream"
+      ],
+      "tags": [
+        "cosmic",
+        "tech",
+        "dreamy",
+        "cool"
+      ],
+      "stops": [
+        {
+          "id": "oklab-blue-purple-dream-haze-0",
+          "color": "#EBD5EB",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-blue-purple-dream-haze-1",
+          "color": "#A1BEE8",
+          "position": 0.471154
+        },
+        {
+          "id": "oklab-blue-purple-dream-haze-2",
+          "color": "#807BCA",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-blue-purple-twilight-sky",
+      "mode": "oklab",
+      "family_id": "blue-purple",
+      "family_label": "BluePurple",
+      "name": "Twilight Sky 夜阑",
+      "summary": "Tech, cosmic, dreamy, twilight, cool atmospheric gradients.",
+      "aliases": [
+        "blue",
+        "purple",
+        "indigo",
+        "tech",
+        "cosmic",
+        "night",
+        "dreamy",
+        "蓝紫",
+        "科技",
+        "夜空",
+        "星空",
+        "梦幻",
+        "冷色",
+        "赛博",
+        "暮色",
+        "twilight"
+      ],
+      "tags": [
+        "cosmic",
+        "tech",
+        "dreamy",
+        "cool"
+      ],
+      "stops": [
+        {
+          "id": "oklab-blue-purple-twilight-sky-0",
+          "color": "#E3CCE6",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-blue-purple-twilight-sky-1",
+          "color": "#4E8CD5",
+          "position": 0.350962
+        },
+        {
+          "id": "oklab-blue-purple-twilight-sky-2",
+          "color": "#6068C2",
+          "position": 0.644231
+        },
+        {
+          "id": "oklab-blue-purple-twilight-sky-3",
+          "color": "#38364E",
+          "position": 0.995192
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-green-yellow-tranquil-bay",
+      "mode": "oklab",
+      "family_id": "green-yellow",
+      "family_label": "GreenYellow",
+      "name": "Tranquil Bay 海湾",
+      "summary": "Fresh, natural, spring, wellness, aquatic green-to-sky gradients.",
+      "aliases": [
+        "green",
+        "mint",
+        "spring",
+        "fresh",
+        "nature",
+        "wellness",
+        "aqua",
+        "青绿",
+        "春日",
+        "自然",
+        "清新",
+        "薄荷",
+        "湖水",
+        "草地",
+        "tranquil"
+      ],
+      "tags": [
+        "fresh",
+        "nature",
+        "spring",
+        "wellness"
+      ],
+      "stops": [
+        {
+          "id": "oklab-green-yellow-tranquil-bay-0",
+          "color": "#DBE3D0",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-green-yellow-tranquil-bay-1",
+          "color": "#8DB8A7",
+          "position": 0.230769
+        },
+        {
+          "id": "oklab-green-yellow-tranquil-bay-2",
+          "color": "#2D8E9A",
+          "position": 0.418269
+        },
+        {
+          "id": "oklab-green-yellow-tranquil-bay-3",
+          "color": "#076492",
+          "position": 0.586538
+        },
+        {
+          "id": "oklab-green-yellow-tranquil-bay-4",
+          "color": "#154288",
+          "position": 0.788462
+        },
+        {
+          "id": "oklab-green-yellow-tranquil-bay-5",
+          "color": "#262C81",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-green-yellow-mint-sugar",
+      "mode": "oklab",
+      "family_id": "green-yellow",
+      "family_label": "GreenYellow",
+      "name": "Mint Sugar 薄荷糖",
+      "summary": "Fresh, natural, spring, wellness, aquatic green-to-sky gradients.",
+      "aliases": [
+        "green",
+        "mint",
+        "spring",
+        "fresh",
+        "nature",
+        "wellness",
+        "aqua",
+        "青绿",
+        "春日",
+        "自然",
+        "清新",
+        "薄荷",
+        "湖水",
+        "草地",
+        "mint"
+      ],
+      "tags": [
+        "fresh",
+        "nature",
+        "spring",
+        "wellness"
+      ],
+      "stops": [
+        {
+          "id": "oklab-green-yellow-mint-sugar-0",
+          "color": "#DECEE8",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-green-yellow-mint-sugar-1",
+          "color": "#CBBAEE",
+          "position": 0.206731
+        },
+        {
+          "id": "oklab-green-yellow-mint-sugar-2",
+          "color": "#7DC0FB",
+          "position": 0.461538
+        },
+        {
+          "id": "oklab-green-yellow-mint-sugar-3",
+          "color": "#00C7A6",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-green-yellow-lakeside-glow",
+      "mode": "oklab",
+      "family_id": "green-yellow",
+      "family_label": "GreenYellow",
+      "name": "Lakeside Glow 湖光",
+      "summary": "Fresh, natural, spring, wellness, aquatic green-to-sky gradients.",
+      "aliases": [
+        "green",
+        "mint",
+        "spring",
+        "fresh",
+        "nature",
+        "wellness",
+        "aqua",
+        "青绿",
+        "春日",
+        "自然",
+        "清新",
+        "薄荷",
+        "湖水",
+        "草地",
+        "lakeside"
+      ],
+      "tags": [
+        "fresh",
+        "nature",
+        "spring",
+        "wellness"
+      ],
+      "stops": [
+        {
+          "id": "oklab-green-yellow-lakeside-glow-0",
+          "color": "#EFEDAD",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-green-yellow-lakeside-glow-1",
+          "color": "#A7E1A7",
+          "position": 0.269231
+        },
+        {
+          "id": "oklab-green-yellow-lakeside-glow-2",
+          "color": "#3898EF",
+          "position": 0.831731
+        },
+        {
+          "id": "oklab-green-yellow-lakeside-glow-3",
+          "color": "#119AB8",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-green-yellow-spring-sky",
+      "mode": "oklab",
+      "family_id": "green-yellow",
+      "family_label": "GreenYellow",
+      "name": "Spring Sky 晴空",
+      "summary": "Fresh, natural, spring, wellness, aquatic green-to-sky gradients.",
+      "aliases": [
+        "green",
+        "mint",
+        "spring",
+        "fresh",
+        "nature",
+        "wellness",
+        "aqua",
+        "青绿",
+        "春日",
+        "自然",
+        "清新",
+        "薄荷",
+        "湖水",
+        "草地",
+        "spring"
+      ],
+      "tags": [
+        "fresh",
+        "nature",
+        "spring",
+        "wellness"
+      ],
+      "stops": [
+        {
+          "id": "oklab-green-yellow-spring-sky-0",
+          "color": "#F7D5C5",
+          "position": 0.072115
+        },
+        {
+          "id": "oklab-green-yellow-spring-sky-1",
+          "color": "#46A8C0",
+          "position": 0.576923
+        },
+        {
+          "id": "oklab-green-yellow-spring-sky-2",
+          "color": "#43AE7D",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-green-yellow-meadow",
+      "mode": "oklab",
+      "family_id": "green-yellow",
+      "family_label": "GreenYellow",
+      "name": "Meadow 原野",
+      "summary": "Fresh, natural, spring, wellness, aquatic green-to-sky gradients.",
+      "aliases": [
+        "green",
+        "mint",
+        "spring",
+        "fresh",
+        "nature",
+        "wellness",
+        "aqua",
+        "青绿",
+        "春日",
+        "自然",
+        "清新",
+        "薄荷",
+        "湖水",
+        "草地",
+        "meadow"
+      ],
+      "tags": [
+        "fresh",
+        "nature",
+        "spring",
+        "wellness"
+      ],
+      "stops": [
+        {
+          "id": "oklab-green-yellow-meadow-0",
+          "color": "#FBD6C2",
+          "position": 0.09
+        },
+        {
+          "id": "oklab-green-yellow-meadow-1",
+          "color": "#7BC44A",
+          "position": 0.745192
+        },
+        {
+          "id": "oklab-green-yellow-meadow-2",
+          "color": "#BCB708",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-green-yellow-spring-days",
+      "mode": "oklab",
+      "family_id": "green-yellow",
+      "family_label": "GreenYellow",
+      "name": "Spring Days 春日",
+      "summary": "Fresh, natural, spring, wellness, aquatic green-to-sky gradients.",
+      "aliases": [
+        "green",
+        "mint",
+        "spring",
+        "fresh",
+        "nature",
+        "wellness",
+        "aqua",
+        "青绿",
+        "春日",
+        "自然",
+        "清新",
+        "薄荷",
+        "湖水",
+        "草地",
+        "spring"
+      ],
+      "tags": [
+        "fresh",
+        "nature",
+        "spring",
+        "wellness"
+      ],
+      "stops": [
+        {
+          "id": "oklab-green-yellow-spring-days-0",
+          "color": "#EDCED3",
+          "position": 0.081731
+        },
+        {
+          "id": "oklab-green-yellow-spring-days-1",
+          "color": "#90D5BF",
+          "position": 0.399038
+        },
+        {
+          "id": "oklab-green-yellow-spring-days-2",
+          "color": "#34C99E",
+          "position": 0.649038
+        },
+        {
+          "id": "oklab-green-yellow-spring-days-3",
+          "color": "#A9BF5A",
+          "position": 0.903846
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-contrast-floral",
+      "mode": "oklab",
+      "family_id": "contrast",
+      "family_label": "Contrast",
+      "name": "Floral 花漾",
+      "summary": "Playful, fashion, loud, colorful contrast gradients with punch.",
+      "aliases": [
+        "contrast",
+        "fashion",
+        "playful",
+        "vivid",
+        "editorial",
+        "撞色",
+        "高对比",
+        "活力",
+        "时尚",
+        "彩色",
+        "大胆",
+        "floral"
+      ],
+      "tags": [
+        "playful",
+        "fashion",
+        "bold",
+        "vivid"
+      ],
+      "stops": [
+        {
+          "id": "oklab-contrast-floral-0",
+          "color": "#C9DB78",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-contrast-floral-1",
+          "color": "#FAB760",
+          "position": 0.456731
+        },
+        {
+          "id": "oklab-contrast-floral-2",
+          "color": "#FF93A3",
+          "position": 0.831731
+        },
+        {
+          "id": "oklab-contrast-floral-3",
+          "color": "#EE8ECB",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-contrast-glacial-glow",
+      "mode": "oklab",
+      "family_id": "contrast",
+      "family_label": "Contrast",
+      "name": "Glacial Glow 彩云",
+      "summary": "Playful, fashion, loud, colorful contrast gradients with punch.",
+      "aliases": [
+        "contrast",
+        "fashion",
+        "playful",
+        "vivid",
+        "editorial",
+        "撞色",
+        "高对比",
+        "活力",
+        "时尚",
+        "彩色",
+        "大胆",
+        "glacial"
+      ],
+      "tags": [
+        "playful",
+        "fashion",
+        "bold",
+        "vivid"
+      ],
+      "stops": [
+        {
+          "id": "oklab-contrast-glacial-glow-0",
+          "color": "#FFD593",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-contrast-glacial-glow-1",
+          "color": "#FFB48B",
+          "position": 0.326923
+        },
+        {
+          "id": "oklab-contrast-glacial-glow-2",
+          "color": "#FF92DF",
+          "position": 0.644231
+        },
+        {
+          "id": "oklab-contrast-glacial-glow-3",
+          "color": "#989BFF",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-contrast-waltz",
+      "mode": "oklab",
+      "family_id": "contrast",
+      "family_label": "Contrast",
+      "name": "Waltz 华尔兹",
+      "summary": "Playful, fashion, loud, colorful contrast gradients with punch.",
+      "aliases": [
+        "contrast",
+        "fashion",
+        "playful",
+        "vivid",
+        "editorial",
+        "撞色",
+        "高对比",
+        "活力",
+        "时尚",
+        "彩色",
+        "大胆",
+        "waltz"
+      ],
+      "tags": [
+        "playful",
+        "fashion",
+        "bold",
+        "vivid"
+      ],
+      "stops": [
+        {
+          "id": "oklab-contrast-waltz-0",
+          "color": "#F4B1A8",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-contrast-waltz-1",
+          "color": "#E36787",
+          "position": 0.264423
+        },
+        {
+          "id": "oklab-contrast-waltz-2",
+          "color": "#7914DF",
+          "position": 0.663462
+        },
+        {
+          "id": "oklab-contrast-waltz-3",
+          "color": "#2209A7",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-contrast-midnight-bourbon",
+      "mode": "oklab",
+      "family_id": "contrast",
+      "family_label": "Contrast",
+      "name": "Midnight Bourbon 午夜波本",
+      "summary": "Playful, fashion, loud, colorful contrast gradients with punch.",
+      "aliases": [
+        "contrast",
+        "fashion",
+        "playful",
+        "vivid",
+        "editorial",
+        "撞色",
+        "高对比",
+        "活力",
+        "时尚",
+        "彩色",
+        "大胆",
+        "midnight"
+      ],
+      "tags": [
+        "playful",
+        "fashion",
+        "bold",
+        "vivid"
+      ],
+      "stops": [
+        {
+          "id": "oklab-contrast-midnight-bourbon-0",
+          "color": "#F2846D",
+          "position": 0.120192
+        },
+        {
+          "id": "oklab-contrast-midnight-bourbon-1",
+          "color": "#D66AA4",
+          "position": 0.254808
+        },
+        {
+          "id": "oklab-contrast-midnight-bourbon-2",
+          "color": "#1F3FCE",
+          "position": 0.605769
+        },
+        {
+          "id": "oklab-contrast-midnight-bourbon-3",
+          "color": "#101A7C",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-contrast-amber-mist",
+      "mode": "oklab",
+      "family_id": "contrast",
+      "family_label": "Contrast",
+      "name": "Amber Mist 雾色暖阳",
+      "summary": "Playful, fashion, loud, colorful contrast gradients with punch.",
+      "aliases": [
+        "contrast",
+        "fashion",
+        "playful",
+        "vivid",
+        "editorial",
+        "撞色",
+        "高对比",
+        "活力",
+        "时尚",
+        "彩色",
+        "大胆",
+        "amber"
+      ],
+      "tags": [
+        "playful",
+        "fashion",
+        "bold",
+        "vivid"
+      ],
+      "stops": [
+        {
+          "id": "oklab-contrast-amber-mist-0",
+          "color": "#E0A800",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-contrast-amber-mist-1",
+          "color": "#FF7C5B",
+          "position": 0.75
+        },
+        {
+          "id": "oklab-contrast-amber-mist-2",
+          "color": "#E08E81",
+          "position": 0.860577
+        },
+        {
+          "id": "oklab-contrast-amber-mist-3",
+          "color": "#91ABCC",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-contrast-mint-blossom",
+      "mode": "oklab",
+      "family_id": "contrast",
+      "family_label": "Contrast",
+      "name": "Mint Blossom 樱草",
+      "summary": "Playful, fashion, loud, colorful contrast gradients with punch.",
+      "aliases": [
+        "contrast",
+        "fashion",
+        "playful",
+        "vivid",
+        "editorial",
+        "撞色",
+        "高对比",
+        "活力",
+        "时尚",
+        "彩色",
+        "大胆",
+        "mint"
+      ],
+      "tags": [
+        "playful",
+        "fashion",
+        "bold",
+        "vivid"
+      ],
+      "stops": [
+        {
+          "id": "oklab-contrast-mint-blossom-0",
+          "color": "#C0D589",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-contrast-mint-blossom-1",
+          "color": "#ABC0C5",
+          "position": 0.264423
+        },
+        {
+          "id": "oklab-contrast-mint-blossom-2",
+          "color": "#EE90CC",
+          "position": 0.754808
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-dark-champagne",
+      "mode": "oklab",
+      "family_id": "dark",
+      "family_label": "Dark",
+      "name": "Champagne 古典香槟",
+      "summary": "Cinematic, moody, luxurious, night-life and dense dark gradients.",
+      "aliases": [
+        "dark",
+        "moody",
+        "cinematic",
+        "luxury",
+        "night",
+        "暗色",
+        "电影感",
+        "高级",
+        "夜店",
+        "厚重",
+        "深色",
+        "champagne"
+      ],
+      "tags": [
+        "moody",
+        "cinematic",
+        "luxury",
+        "dense"
+      ],
+      "stops": [
+        {
+          "id": "oklab-dark-champagne-0",
+          "color": "#CFE6B8",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-dark-champagne-1",
+          "color": "#B07840",
+          "position": 0.4
+        },
+        {
+          "id": "oklab-dark-champagne-2",
+          "color": "#965917",
+          "position": 0.53
+        },
+        {
+          "id": "oklab-dark-champagne-3",
+          "color": "#383833",
+          "position": 0.75
+        },
+        {
+          "id": "oklab-dark-champagne-4",
+          "color": "#002E38",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-dark-dusky-horizon",
+      "mode": "oklab",
+      "family_id": "dark",
+      "family_label": "Dark",
+      "name": "Dusky Horizon 暮色线",
+      "summary": "Cinematic, moody, luxurious, night-life and dense dark gradients.",
+      "aliases": [
+        "dark",
+        "moody",
+        "cinematic",
+        "luxury",
+        "night",
+        "暗色",
+        "电影感",
+        "高级",
+        "夜店",
+        "厚重",
+        "深色",
+        "dusky"
+      ],
+      "tags": [
+        "moody",
+        "cinematic",
+        "luxury",
+        "dense"
+      ],
+      "stops": [
+        {
+          "id": "oklab-dark-dusky-horizon-0",
+          "color": "#F2C7EB",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-dark-dusky-horizon-1",
+          "color": "#4F70B5",
+          "position": 0.5
+        },
+        {
+          "id": "oklab-dark-dusky-horizon-2",
+          "color": "#3D5C94",
+          "position": 0.59
+        },
+        {
+          "id": "oklab-dark-dusky-horizon-3",
+          "color": "#363D4F",
+          "position": 0.75
+        },
+        {
+          "id": "oklab-dark-dusky-horizon-4",
+          "color": "#402105",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-dark-phantom",
+      "mode": "oklab",
+      "family_id": "dark",
+      "family_label": "Dark",
+      "name": "Phantom 魅影",
+      "summary": "Cinematic, moody, luxurious, night-life and dense dark gradients.",
+      "aliases": [
+        "dark",
+        "moody",
+        "cinematic",
+        "luxury",
+        "night",
+        "暗色",
+        "电影感",
+        "高级",
+        "夜店",
+        "厚重",
+        "深色",
+        "phantom"
+      ],
+      "tags": [
+        "moody",
+        "cinematic",
+        "luxury",
+        "dense"
+      ],
+      "stops": [
+        {
+          "id": "oklab-dark-phantom-0",
+          "color": "#C4541A",
+          "position": 0.07
+        },
+        {
+          "id": "oklab-dark-phantom-1",
+          "color": "#A8425E",
+          "position": 0.24
+        },
+        {
+          "id": "oklab-dark-phantom-2",
+          "color": "#73218F",
+          "position": 0.43
+        },
+        {
+          "id": "oklab-dark-phantom-3",
+          "color": "#400A75",
+          "position": 0.58
+        },
+        {
+          "id": "oklab-dark-phantom-4",
+          "color": "#240845",
+          "position": 0.77
+        },
+        {
+          "id": "oklab-dark-phantom-5",
+          "color": "#030300",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-dark-jungle",
+      "mode": "oklab",
+      "family_id": "dark",
+      "family_label": "Dark",
+      "name": "Jungle 丛林",
+      "summary": "Cinematic, moody, luxurious, night-life and dense dark gradients.",
+      "aliases": [
+        "dark",
+        "moody",
+        "cinematic",
+        "luxury",
+        "night",
+        "暗色",
+        "电影感",
+        "高级",
+        "夜店",
+        "厚重",
+        "深色",
+        "jungle"
+      ],
+      "tags": [
+        "moody",
+        "cinematic",
+        "luxury",
+        "dense"
+      ],
+      "stops": [
+        {
+          "id": "oklab-dark-jungle-0",
+          "color": "#B0991C",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-dark-jungle-1",
+          "color": "#739642",
+          "position": 0.35
+        },
+        {
+          "id": "oklab-dark-jungle-2",
+          "color": "#4A874A",
+          "position": 0.49
+        },
+        {
+          "id": "oklab-dark-jungle-3",
+          "color": "#0F574D",
+          "position": 0.69
+        },
+        {
+          "id": "oklab-dark-jungle-4",
+          "color": "#080300",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-dark-fading-night",
+      "mode": "oklab",
+      "family_id": "dark",
+      "family_label": "Dark",
+      "name": "Fading Night 渐明",
+      "summary": "Cinematic, moody, luxurious, night-life and dense dark gradients.",
+      "aliases": [
+        "dark",
+        "moody",
+        "cinematic",
+        "luxury",
+        "night",
+        "暗色",
+        "电影感",
+        "高级",
+        "夜店",
+        "厚重",
+        "深色",
+        "fading"
+      ],
+      "tags": [
+        "moody",
+        "cinematic",
+        "luxury",
+        "dense"
+      ],
+      "stops": [
+        {
+          "id": "oklab-dark-fading-night-0",
+          "color": "#DEC4D1",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-dark-fading-night-1",
+          "color": "#878CB8",
+          "position": 0.23
+        },
+        {
+          "id": "oklab-dark-fading-night-2",
+          "color": "#215C80",
+          "position": 0.5
+        },
+        {
+          "id": "oklab-dark-fading-night-3",
+          "color": "#3D365C",
+          "position": 0.72
+        },
+        {
+          "id": "oklab-dark-fading-night-4",
+          "color": "#210F17",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-light-soft-bubble",
+      "mode": "oklab",
+      "family_id": "light",
+      "family_label": "Light",
+      "name": "Soft Bubble 泡沫",
+      "summary": "Airy, skincare, soft, friendly, pastel-light gradients.",
+      "aliases": [
+        "light",
+        "airy",
+        "soft",
+        "pastel",
+        "skincare",
+        "浅色",
+        "空气感",
+        "轻盈",
+        "柔和",
+        "护肤",
+        "粉彩",
+        "soft"
+      ],
+      "tags": [
+        "airy",
+        "soft",
+        "pastel",
+        "friendly"
+      ],
+      "stops": [
+        {
+          "id": "oklab-light-soft-bubble-0",
+          "color": "#F5EBD9",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-light-soft-bubble-1",
+          "color": "#F2D4DB",
+          "position": 0.31
+        },
+        {
+          "id": "oklab-light-soft-bubble-2",
+          "color": "#EBBDDE",
+          "position": 0.5
+        },
+        {
+          "id": "oklab-light-soft-bubble-3",
+          "color": "#CCBAE3",
+          "position": 0.65
+        },
+        {
+          "id": "oklab-light-soft-bubble-4",
+          "color": "#8CBFF0",
+          "position": 0.82
+        },
+        {
+          "id": "oklab-light-soft-bubble-5",
+          "color": "#78B0FF",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-light-tonic",
+      "mode": "oklab",
+      "family_id": "light",
+      "family_label": "Light",
+      "name": "Tonic 汤力水",
+      "summary": "Airy, skincare, soft, friendly, pastel-light gradients.",
+      "aliases": [
+        "light",
+        "airy",
+        "soft",
+        "pastel",
+        "skincare",
+        "浅色",
+        "空气感",
+        "轻盈",
+        "柔和",
+        "护肤",
+        "粉彩",
+        "tonic"
+      ],
+      "tags": [
+        "airy",
+        "soft",
+        "pastel",
+        "friendly"
+      ],
+      "stops": [
+        {
+          "id": "oklab-light-tonic-0",
+          "color": "#E3EDF0",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-light-tonic-1",
+          "color": "#E8EBB8",
+          "position": 0.27
+        },
+        {
+          "id": "oklab-light-tonic-2",
+          "color": "#F0DEA3",
+          "position": 0.43
+        },
+        {
+          "id": "oklab-light-tonic-3",
+          "color": "#E8B078",
+          "position": 0.75
+        },
+        {
+          "id": "oklab-light-tonic-4",
+          "color": "#F29682",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-light-peach",
+      "mode": "oklab",
+      "family_id": "light",
+      "family_label": "Light",
+      "name": "Peach 水蜜桃",
+      "summary": "Airy, skincare, soft, friendly, pastel-light gradients.",
+      "aliases": [
+        "light",
+        "airy",
+        "soft",
+        "pastel",
+        "skincare",
+        "浅色",
+        "空气感",
+        "轻盈",
+        "柔和",
+        "护肤",
+        "粉彩",
+        "peach"
+      ],
+      "tags": [
+        "airy",
+        "soft",
+        "pastel",
+        "friendly"
+      ],
+      "stops": [
+        {
+          "id": "oklab-light-peach-0",
+          "color": "#D9F5FA",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-light-peach-1",
+          "color": "#FCD9D6",
+          "position": 0.31
+        },
+        {
+          "id": "oklab-light-peach-2",
+          "color": "#FCBAC9",
+          "position": 0.61
+        },
+        {
+          "id": "oklab-light-peach-3",
+          "color": "#F0B3F5",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-light-tangerine-sparkle",
+      "mode": "oklab",
+      "family_id": "light",
+      "family_label": "Light",
+      "name": "Tangerine Sparkle 青桔气泡",
+      "summary": "Airy, skincare, soft, friendly, pastel-light gradients.",
+      "aliases": [
+        "light",
+        "airy",
+        "soft",
+        "pastel",
+        "skincare",
+        "浅色",
+        "空气感",
+        "轻盈",
+        "柔和",
+        "护肤",
+        "粉彩",
+        "tangerine"
+      ],
+      "tags": [
+        "airy",
+        "soft",
+        "pastel",
+        "friendly"
+      ],
+      "stops": [
+        {
+          "id": "oklab-light-tangerine-sparkle-0",
+          "color": "#F2F2E6",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-light-tangerine-sparkle-1",
+          "color": "#F5F5CC",
+          "position": 0.31
+        },
+        {
+          "id": "oklab-light-tangerine-sparkle-2",
+          "color": "#D1F2C9",
+          "position": 0.64
+        },
+        {
+          "id": "oklab-light-tangerine-sparkle-3",
+          "color": "#66F5C2",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklab-light-sun-flower",
+      "mode": "oklab",
+      "family_id": "light",
+      "family_label": "Light",
+      "name": "Sun Flower 向阳",
+      "summary": "Airy, skincare, soft, friendly, pastel-light gradients.",
+      "aliases": [
+        "light",
+        "airy",
+        "soft",
+        "pastel",
+        "skincare",
+        "浅色",
+        "空气感",
+        "轻盈",
+        "柔和",
+        "护肤",
+        "粉彩",
+        "sun"
+      ],
+      "tags": [
+        "airy",
+        "soft",
+        "pastel",
+        "friendly"
+      ],
+      "stops": [
+        {
+          "id": "oklab-light-sun-flower-0",
+          "color": "#FFD9C2",
+          "position": 0.0
+        },
+        {
+          "id": "oklab-light-sun-flower-1",
+          "color": "#F5C7C4",
+          "position": 0.22
+        },
+        {
+          "id": "oklab-light-sun-flower-2",
+          "color": "#D1BAE3",
+          "position": 0.5
+        },
+        {
+          "id": "oklab-light-sun-flower-3",
+          "color": "#C2B8F0",
+          "position": 0.8
+        },
+        {
+          "id": "oklab-light-sun-flower-4",
+          "color": "#D6A6F0",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-families"
+    },
+    {
+      "id": "oklch-lime-pink-burst",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Lime Pink Burst",
+      "summary": "Acid lime to hot pink for loud, pop, poster-like ramps.",
+      "aliases": [
+        "lime",
+        "pink",
+        "acid",
+        "neon",
+        "黄绿",
+        "亮粉",
+        "酸性"
+      ],
+      "tags": [
+        "warm",
+        "contrast",
+        "neon",
+        "pop"
+      ],
+      "stops": [
+        {
+          "id": "oklch-lime-pink-burst-0",
+          "color": "#CCE31C",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-lime-pink-burst-1",
+          "color": "#FB2883",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-cyan-magenta-flash",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Cyan Magenta Flash",
+      "summary": "Electric cyan to magenta for cyber and nightlife accents.",
+      "aliases": [
+        "cyan",
+        "magenta",
+        "electric",
+        "蓝粉",
+        "青蓝",
+        "洋红",
+        "赛博"
+      ],
+      "tags": [
+        "cool",
+        "contrast",
+        "neon",
+        "cyber"
+      ],
+      "stops": [
+        {
+          "id": "oklch-cyan-magenta-flash-0",
+          "color": "#66FFF5",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-cyan-magenta-flash-1",
+          "color": "#FF1A75",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-mint-magenta-surge",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Mint Magenta Surge",
+      "summary": "Mint-to-magenta with slightly softer cool energy.",
+      "aliases": [
+        "mint",
+        "magenta",
+        "薄荷",
+        "品红",
+        "清凉"
+      ],
+      "tags": [
+        "cool",
+        "contrast",
+        "vivid"
+      ],
+      "stops": [
+        {
+          "id": "oklch-mint-magenta-surge-0",
+          "color": "#66FFE6",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-mint-magenta-surge-1",
+          "color": "#FF1A75",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-mint-apricot-pop",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Mint Apricot Pop",
+      "summary": "Fresh mint to bright apricot, good for playful spring UI.",
+      "aliases": [
+        "mint",
+        "apricot",
+        "薄荷",
+        "杏橙",
+        "春天"
+      ],
+      "tags": [
+        "fresh",
+        "warm",
+        "playful"
+      ],
+      "stops": [
+        {
+          "id": "oklch-mint-apricot-pop-0",
+          "color": "#66FFE6",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-mint-apricot-pop-1",
+          "color": "#FF9838",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-blue-orange-spark",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Blue Orange Spark",
+      "summary": "Clear blue to orange for bold complementary contrast.",
+      "aliases": [
+        "blue",
+        "orange",
+        "蓝橙",
+        "互补",
+        "互补色"
+      ],
+      "tags": [
+        "contrast",
+        "bold",
+        "editorial"
+      ],
+      "stops": [
+        {
+          "id": "oklch-blue-orange-spark-0",
+          "color": "#6685FF",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-blue-orange-spark-1",
+          "color": "#FF9838",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-violet-lime-voltage",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Violet Lime Voltage",
+      "summary": "Purple to lime with sharp complementary punch.",
+      "aliases": [
+        "violet",
+        "lime",
+        "紫绿",
+        "荧光",
+        "高能"
+      ],
+      "tags": [
+        "contrast",
+        "neon",
+        "bold"
+      ],
+      "stops": [
+        {
+          "id": "oklch-violet-lime-voltage-0",
+          "color": "#BA66FF",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-violet-lime-voltage-1",
+          "color": "#FCFF57",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-pink-sprout-balance",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Pink Sprout Balance",
+      "summary": "Pink to light green, softer than the neon pairs.",
+      "aliases": [
+        "pink",
+        "green",
+        "粉绿",
+        "糖果",
+        "春意"
+      ],
+      "tags": [
+        "fresh",
+        "contrast",
+        "soft-pop"
+      ],
+      "stops": [
+        {
+          "id": "oklch-pink-sprout-balance-0",
+          "color": "#FF66E3",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-pink-sprout-balance-1",
+          "color": "#A5FF99",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-peach-sky-soft",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Peach Sky Soft",
+      "summary": "Peach to powder sky blue for gentle editorial backgrounds.",
+      "aliases": [
+        "peach",
+        "sky",
+        "粉蓝",
+        "桃子",
+        "天空"
+      ],
+      "tags": [
+        "light",
+        "pastel",
+        "soft"
+      ],
+      "stops": [
+        {
+          "id": "oklch-peach-sky-soft-0",
+          "color": "#FFB866",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-peach-sky-soft-1",
+          "color": "#99CAFF",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-violet-mint-fizz",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Violet Mint Fizz",
+      "summary": "Soft violet to mint, bright but easier to place in UI.",
+      "aliases": [
+        "violet",
+        "mint",
+        "紫薄荷",
+        "清爽"
+      ],
+      "tags": [
+        "cool",
+        "fresh",
+        "playful"
+      ],
+      "stops": [
+        {
+          "id": "oklch-violet-mint-fizz-0",
+          "color": "#AB66FF",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-violet-mint-fizz-1",
+          "color": "#8AFFB3",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-peach-lilac-mist",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Peach Lilac Mist",
+      "summary": "Peach cream to lilac for soft beauty and lifestyle work.",
+      "aliases": [
+        "peach",
+        "lilac",
+        "桃紫",
+        "奶油",
+        "美妆"
+      ],
+      "tags": [
+        "light",
+        "pastel",
+        "beauty"
+      ],
+      "stops": [
+        {
+          "id": "oklch-peach-lilac-mist-0",
+          "color": "#FFD9C2",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-peach-lilac-mist-1",
+          "color": "#D6A6F0",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-pistachio-orchid-drift",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Pistachio Orchid Drift",
+      "summary": "Pistachio to orchid for airy lifestyle palettes.",
+      "aliases": [
+        "pistachio",
+        "orchid",
+        "豆绿",
+        "兰花紫",
+        "轻柔"
+      ],
+      "tags": [
+        "light",
+        "pastel",
+        "fresh"
+      ],
+      "stops": [
+        {
+          "id": "oklch-pistachio-orchid-drift-0",
+          "color": "#C3FFC2",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-pistachio-orchid-drift-1",
+          "color": "#F0B3F5",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-lilac-teal-bridge",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Lilac Teal Bridge",
+      "summary": "Muted lilac to teal for calmer cool-color transitions.",
+      "aliases": [
+        "lilac",
+        "teal",
+        "紫青",
+        "雾紫",
+        "青绿"
+      ],
+      "tags": [
+        "cool",
+        "calm",
+        "editorial"
+      ],
+      "stops": [
+        {
+          "id": "oklch-lilac-teal-bridge-0",
+          "color": "#DECEE8",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-lilac-teal-bridge-1",
+          "color": "#00C7A6",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    },
+    {
+      "id": "oklch-sage-indigo-dusk",
+      "mode": "oklch",
+      "family_id": "oklch-pairs",
+      "family_label": "OKLCH pairs",
+      "name": "Sage Indigo Dusk",
+      "summary": "Sage gray-green to indigo for quiet premium mood.",
+      "aliases": [
+        "sage",
+        "indigo",
+        "鼠尾草",
+        "靛蓝",
+        "安静",
+        "高级"
+      ],
+      "tags": [
+        "dark",
+        "quiet",
+        "premium"
+      ],
+      "stops": [
+        {
+          "id": "oklch-sage-indigo-dusk-0",
+          "color": "#DBE3D0",
+          "position": 0.0
+        },
+        {
+          "id": "oklch-sage-indigo-dusk-1",
+          "color": "#262C81",
+          "position": 1.0
+        }
+      ],
+      "pack": "core-pairs"
+    }
+  ],
+  "catalog": {
+    "id": "gradient-presets-core",
+    "version": 1,
+    "preferred_interpolation_order": [
+      "oklch",
+      "oklab"
+    ],
+    "default_direction": "135deg",
+    "notes": [
+      "Prefer family-driven selection first.",
+      "Use OKLCH by default for vivid short ramps and clean UI gradients.",
+      "Use OKLAB for multi-stop atmospheric backgrounds and structured family presets.",
+      "All presets are bundled locally and available offline after installation."
+    ]
+  }
+}
