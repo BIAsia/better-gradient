@@ -40,6 +40,11 @@ After installing, restart Codex so the new skill is picked up immediately.
 - Picks gradients by hue family first, instead of inventing colors from scratch every time
 - Defaults to `oklch` for vivid short ramps and simple UI gradients
 - Falls back to `oklab` for multi-stop atmospheric backgrounds and structured family presets
+- Turns OKLCH interpolation into segmented hex stops for production compatibility
+- Warps gradients with curve presets such as `top-empty` and `top-active`
+- Makes existing gradients more vivid by increasing OKLCH chroma
+- Shifts a gradient toward a supplied color, image average color, or hue direction while preserving relative color movement
+- Exports CSS, SwiftUI, Android Compose, and Figma Plugin API snippets
 - Ships with a fully bundled offline preset pack, so the skill works without network access after install
 - Does not depend on any external repo, API, or runtime download once installed
 
@@ -57,6 +62,7 @@ After installing, restart Codex so the new skill is picked up immediately.
 - `references/family-guide.md`: quick mapping from mood and color language to families
 - `references/preset-catalog.json`: bundled offline preset catalog
 - `scripts/find_presets.py`: local preset search and CSS output helper
+- `scripts/gradient_tool.py`: search, transform, segment, recolor, warp, and export helper
 
 ## Example Usage
 
@@ -71,6 +77,9 @@ You can also run the helper script directly inside the repo:
 ```bash
 python3 scripts/find_presets.py --query "蓝紫 科技感 hero 背景" --limit 3
 python3 scripts/find_presets.py --query "护肤 空气感 浅色" --mode oklch --format css --limit 3
+python3 scripts/gradient_tool.py transform --query "红色系 渐变 文字" --scope text --oklch-segments
+python3 scripts/gradient_tool.py transform --preset dream-haze --curve top-empty --samples 14
+python3 scripts/gradient_tool.py transform --preset dream-haze --shift-color "#3B82F6" --format figma
 ```
 
 ## Local Validation
@@ -78,6 +87,7 @@ python3 scripts/find_presets.py --query "护肤 空气感 浅色" --mode oklch -
 ```bash
 python3 scripts/find_presets.py --query "蓝紫 科技感 hero 背景" --limit 3
 python3 scripts/find_presets.py --query "护肤 空气感 浅色" --mode oklch --format css --limit 3
+python3 scripts/gradient_tool.py transform --query "梦幻感 背景" --oklch-segments --samples 12
 npx skills add . --list
 ```
 

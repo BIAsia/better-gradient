@@ -1,7 +1,25 @@
 {
+  "source": {
+    "repository": "https://github.com/BIAsia/wrap-gradient",
+    "files": [
+      "config/g.json",
+      "config/oklch_presets.json"
+    ],
+    "preferred_interpolation_order": [
+      "oklch",
+      "oklab"
+    ],
+    "default_direction": "135deg",
+    "notes": [
+      "Prefer family-driven selection first.",
+      "Use OKLCH by default for vivid short ramps and clean UI gradients.",
+      "Use OKLAB for multi-stop atmospheric backgrounds and source-family presets from g.json."
+    ]
+  },
   "families": [
     {
       "id": "red-yellow",
+      "source_name": "RedYellow",
       "label": "RedYellow",
       "cn_label": "红黄暖阳",
       "summary": "Warm sunset, sunrise, peach, coral, glowing editorial gradients.",
@@ -36,11 +54,11 @@
         "oklab-red-yellow-peach-drop",
         "oklab-red-yellow-warm-glow",
         "oklab-red-yellow-sunset-glow"
-      ],
-      "group_name": "RedYellow"
+      ]
     },
     {
       "id": "blue-purple",
+      "source_name": "BluePurple",
       "label": "BluePurple",
       "cn_label": "蓝紫夜空",
       "summary": "Tech, cosmic, dreamy, twilight, cool atmospheric gradients.",
@@ -74,11 +92,11 @@
         "oklab-blue-purple-stellar",
         "oklab-blue-purple-dream-haze",
         "oklab-blue-purple-twilight-sky"
-      ],
-      "group_name": "BluePurple"
+      ]
     },
     {
       "id": "green-yellow",
+      "source_name": "GreenYellow",
       "label": "GreenYellow",
       "cn_label": "青绿春日",
       "summary": "Fresh, natural, spring, wellness, aquatic green-to-sky gradients.",
@@ -111,11 +129,11 @@
         "oklab-green-yellow-spring-sky",
         "oklab-green-yellow-meadow",
         "oklab-green-yellow-spring-days"
-      ],
-      "group_name": "GreenYellow"
+      ]
     },
     {
       "id": "contrast",
+      "source_name": "Contrast",
       "label": "Contrast",
       "cn_label": "高对比撞色",
       "summary": "Playful, fashion, loud, colorful contrast gradients with punch.",
@@ -145,11 +163,11 @@
         "oklab-contrast-midnight-bourbon",
         "oklab-contrast-amber-mist",
         "oklab-contrast-mint-blossom"
-      ],
-      "group_name": "Contrast"
+      ]
     },
     {
       "id": "dark",
+      "source_name": "Dark",
       "label": "Dark",
       "cn_label": "暗色电影感",
       "summary": "Cinematic, moody, luxurious, night-life and dense dark gradients.",
@@ -178,11 +196,11 @@
         "oklab-dark-phantom",
         "oklab-dark-jungle",
         "oklab-dark-fading-night"
-      ],
-      "group_name": "Dark"
+      ]
     },
     {
       "id": "light",
+      "source_name": "Light",
       "label": "Light",
       "cn_label": "浅色空气感",
       "summary": "Airy, skincare, soft, friendly, pastel-light gradients.",
@@ -211,13 +229,13 @@
         "oklab-light-peach",
         "oklab-light-tangerine-sparkle",
         "oklab-light-sun-flower"
-      ],
-      "group_name": "Light"
+      ]
     }
   ],
   "presets": [
     {
       "id": "oklab-red-yellow-burning-sky",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "red-yellow",
       "family_label": "RedYellow",
@@ -274,11 +292,11 @@
           "color": "#000000",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-red-yellow-dyed-horizon",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "red-yellow",
       "family_label": "RedYellow",
@@ -335,11 +353,11 @@
           "color": "#EF2F6A",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-red-yellow-peach-aura",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "red-yellow",
       "family_label": "RedYellow",
@@ -391,11 +409,11 @@
           "color": "#FF420A",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-red-yellow-peach-drop",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "red-yellow",
       "family_label": "RedYellow",
@@ -442,11 +460,11 @@
           "color": "#FF420A",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-red-yellow-warm-glow",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "red-yellow",
       "family_label": "RedYellow",
@@ -498,11 +516,11 @@
           "color": "#F598A4",
           "position": 0.995192
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-red-yellow-sunset-glow",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "red-yellow",
       "family_label": "RedYellow",
@@ -554,11 +572,11 @@
           "color": "#F888A0",
           "position": 0.903846
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-blue-purple-awakening",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "blue-purple",
       "family_label": "BluePurple",
@@ -609,11 +627,11 @@
           "color": "#1F100D",
           "position": 0.995192
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-blue-purple-glacial-glow",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "blue-purple",
       "family_label": "BluePurple",
@@ -669,11 +687,11 @@
           "color": "#EBCDCD",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-blue-purple-frost-dawn",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "blue-purple",
       "family_label": "BluePurple",
@@ -724,11 +742,11 @@
           "color": "#7C62A5",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-blue-purple-stellar",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "blue-purple",
       "family_label": "BluePurple",
@@ -779,11 +797,11 @@
           "color": "#28173B",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-blue-purple-dream-haze",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "blue-purple",
       "family_label": "BluePurple",
@@ -829,11 +847,11 @@
           "color": "#807BCA",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-blue-purple-twilight-sky",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "blue-purple",
       "family_label": "BluePurple",
@@ -884,11 +902,11 @@
           "color": "#38364E",
           "position": 0.995192
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-green-yellow-tranquil-bay",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "green-yellow",
       "family_label": "GreenYellow",
@@ -948,11 +966,11 @@
           "color": "#262C81",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-green-yellow-mint-sugar",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "green-yellow",
       "family_label": "GreenYellow",
@@ -1002,11 +1020,11 @@
           "color": "#00C7A6",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-green-yellow-lakeside-glow",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "green-yellow",
       "family_label": "GreenYellow",
@@ -1056,11 +1074,11 @@
           "color": "#119AB8",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-green-yellow-spring-sky",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "green-yellow",
       "family_label": "GreenYellow",
@@ -1105,11 +1123,11 @@
           "color": "#43AE7D",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-green-yellow-meadow",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "green-yellow",
       "family_label": "GreenYellow",
@@ -1154,11 +1172,11 @@
           "color": "#BCB708",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-green-yellow-spring-days",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "green-yellow",
       "family_label": "GreenYellow",
@@ -1208,11 +1226,11 @@
           "color": "#A9BF5A",
           "position": 0.903846
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-contrast-floral",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "contrast",
       "family_label": "Contrast",
@@ -1259,11 +1277,11 @@
           "color": "#EE8ECB",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-contrast-glacial-glow",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "contrast",
       "family_label": "Contrast",
@@ -1310,11 +1328,11 @@
           "color": "#989BFF",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-contrast-waltz",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "contrast",
       "family_label": "Contrast",
@@ -1361,11 +1379,11 @@
           "color": "#2209A7",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-contrast-midnight-bourbon",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "contrast",
       "family_label": "Contrast",
@@ -1412,11 +1430,11 @@
           "color": "#101A7C",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-contrast-amber-mist",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "contrast",
       "family_label": "Contrast",
@@ -1463,11 +1481,11 @@
           "color": "#91ABCC",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-contrast-mint-blossom",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "contrast",
       "family_label": "Contrast",
@@ -1509,11 +1527,11 @@
           "color": "#EE90CC",
           "position": 0.754808
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-dark-champagne",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "dark",
       "family_label": "Dark",
@@ -1565,11 +1583,11 @@
           "color": "#002E38",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-dark-dusky-horizon",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "dark",
       "family_label": "Dark",
@@ -1621,11 +1639,11 @@
           "color": "#402105",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-dark-phantom",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "dark",
       "family_label": "Dark",
@@ -1682,11 +1700,11 @@
           "color": "#030300",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-dark-jungle",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "dark",
       "family_label": "Dark",
@@ -1738,11 +1756,11 @@
           "color": "#080300",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-dark-fading-night",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "dark",
       "family_label": "Dark",
@@ -1794,11 +1812,11 @@
           "color": "#210F17",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-light-soft-bubble",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "light",
       "family_label": "Light",
@@ -1855,11 +1873,11 @@
           "color": "#78B0FF",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-light-tonic",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "light",
       "family_label": "Light",
@@ -1911,11 +1929,11 @@
           "color": "#F29682",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-light-peach",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "light",
       "family_label": "Light",
@@ -1962,11 +1980,11 @@
           "color": "#F0B3F5",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-light-tangerine-sparkle",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "light",
       "family_label": "Light",
@@ -2013,11 +2031,11 @@
           "color": "#66F5C2",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklab-light-sun-flower",
+      "source": "wrap-gradient:g.json",
       "mode": "oklab",
       "family_id": "light",
       "family_label": "Light",
@@ -2069,11 +2087,11 @@
           "color": "#D6A6F0",
           "position": 1.0
         }
-      ],
-      "pack": "core-families"
+      ]
     },
     {
       "id": "oklch-lime-pink-burst",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2105,11 +2123,11 @@
           "color": "#FB2883",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-cyan-magenta-flash",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2141,11 +2159,11 @@
           "color": "#FF1A75",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-mint-magenta-surge",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2174,11 +2192,11 @@
           "color": "#FF1A75",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-mint-apricot-pop",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2207,11 +2225,11 @@
           "color": "#FF9838",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-blue-orange-spark",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2240,11 +2258,11 @@
           "color": "#FF9838",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-violet-lime-voltage",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2273,11 +2291,11 @@
           "color": "#FCFF57",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-pink-sprout-balance",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2306,11 +2324,11 @@
           "color": "#A5FF99",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-peach-sky-soft",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2339,11 +2357,11 @@
           "color": "#99CAFF",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-violet-mint-fizz",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2371,11 +2389,11 @@
           "color": "#8AFFB3",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-peach-lilac-mist",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2404,11 +2422,11 @@
           "color": "#D6A6F0",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-pistachio-orchid-drift",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2437,11 +2455,11 @@
           "color": "#F0B3F5",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-lilac-teal-bridge",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2470,11 +2488,11 @@
           "color": "#00C7A6",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     },
     {
       "id": "oklch-sage-indigo-dusk",
+      "source": "wrap-gradient:oklch_presets.json",
       "mode": "oklch",
       "family_id": "oklch-pairs",
       "family_label": "OKLCH pairs",
@@ -2504,23 +2522,7 @@
           "color": "#262C81",
           "position": 1.0
         }
-      ],
-      "pack": "core-pairs"
+      ]
     }
-  ],
-  "catalog": {
-    "id": "better-gradient-core",
-    "version": 1,
-    "preferred_interpolation_order": [
-      "oklch",
-      "oklab"
-    ],
-    "default_direction": "135deg",
-    "notes": [
-      "Prefer family-driven selection first.",
-      "Use OKLCH by default for vivid short ramps and clean UI gradients.",
-      "Use OKLAB for multi-stop atmospheric backgrounds and structured family presets.",
-      "All presets are bundled locally and available offline after installation."
-    ]
-  }
+  ]
 }

@@ -4,16 +4,16 @@
 
 - Match hue family first, then pick the closest preset.
 - Default to `oklch` for vivid two-stop ramps and clean UI work.
-- Default to `oklab` for multi-stop, atmospheric, or family-driven backgrounds.
-- If the user clearly names a family, prefer the structured family presets before the generic OKLCH pair presets.
+- Default to `oklab` for multi-stop, atmospheric, or family-driven backgrounds from `g.json`.
+- If the user clearly names a family, prefer the `g.json` family presets before the generic OKLCH pair presets.
 
-## Core OKLAB Families
+## OKLAB Families From `g.json`
 
 | Family | Common cues | Use for | Representative presets |
 | --- | --- | --- | --- |
-| `red-yellow` | 暖色, 夕阳, 朝霞, 桃色, coral, sunrise, sunset | Warm hero backgrounds, editorial covers, beauty, festival, energetic landing pages | `Sunset Glow 夕霞`, `Warm Glow 晨曦`, `Peach Aura 桃霓` |
-| `blue-purple` | 蓝紫, 科技, 夜空, 梦幻, cosmic, tech, twilight | Tech sites, AI products, nightlife, cosmic scenes, dreamy posters | `Dream Haze 梦霭`, `Twilight Sky 夜阑`, `Stellar 星幕` |
-| `green-yellow` | 青绿, 春日, 薄荷, 湖水, 自然, fresh, spring | Wellness, sustainability, nature products, travel, fresh consumer UI | `Mint Sugar 薄荷糖`, `Lakeside Glow 湖光`, `Spring Days 春日` |
+| `red-yellow` | 红色系, 暖色, 夕阳, 朝霞, 桃色, coral, sunrise, sunset | Warm hero backgrounds, editorial covers, beauty, festival, energetic landing pages | `Sunset Glow 夕霞`, `Warm Glow 晨曦`, `Peach Aura 桃霓` |
+| `blue-purple` | 蓝色系, 紫色系, 蓝紫, 科技, 夜空, 梦幻, cosmic, tech, twilight | Tech sites, AI products, nightlife, cosmic scenes, dreamy posters | `Dream Haze 梦霭`, `Twilight Sky 夜阑`, `Stellar 星幕` |
+| `green-yellow` | 绿色系, 青绿, 春日, 薄荷, 湖水, 自然, fresh, spring | Wellness, sustainability, nature products, travel, fresh consumer UI | `Mint Sugar 薄荷糖`, `Lakeside Glow 湖光`, `Spring Days 春日` |
 | `contrast` | 撞色, 高对比, 活力, 时尚, vivid, fashion | Bold marketing, youth brands, posters, music, sporty motion graphics | `Floral 花漾`, `Waltz 华尔兹`, `Amber Mist 雾色暖阳` |
 | `dark` | 暗色, 电影感, 高级, 厚重, moody, luxury | Premium brands, cinematic UI, dark hero sections, nightlife campaigns | `Phantom 魅影`, `Fading Night 渐明`, `Jungle 丛林` |
 | `light` | 浅色, 空气感, 护肤, 粉彩, airy, soft, skincare | Beauty, lifestyle, wellness, onboarding screens, soft editorial cards | `Soft Bubble 泡沫`, `Peach 水蜜桃`, `Sun Flower 向阳` |

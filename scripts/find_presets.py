@@ -93,13 +93,7 @@ def load_catalog() -> dict:
 def build_family_index(catalog: dict) -> dict[str, str]:
     index: dict[str, str] = {}
     for family in catalog["families"]:
-        terms = {
-            family["id"],
-            family["label"],
-            family["cn_label"],
-            family.get("group_name", ""),
-            family.get("source_name", ""),
-        }
+        terms = {family["id"], family["label"], family["cn_label"], family["source_name"]}
         terms.update(family.get("aliases", []))
         for term in terms:
             normalized = normalize(str(term))
@@ -231,7 +225,7 @@ def render_css(results: list[dict], direction: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Rank bundled gradient presets by query, family, and interpolation mode."
+        description="Rank wrap-gradient-derived presets by query, family, and interpolation mode."
     )
     parser.add_argument("--query", default="", help="Free-text request such as '蓝紫 科技感 hero 背景'")
     parser.add_argument("--family", default="", help="Optional family override such as red-yellow or blue-purple")

@@ -1,67 +1,111 @@
 ---
 name: better-gradient
-description: Design and suggest offline gradient presets from a bundled catalog, prioritizing hue-family matching before inventing new ramps and defaulting to OKLCH or OKLAB interpolation. Use when an agentic coding tool needs to create or refine 渐变, gradient backgrounds, hero color ramps, brand color directions, CSS or SVG gradient code, or palette suggestions based on 色系, 氛围, 蓝紫, 青绿, 暖色, 撞色, 暗色, 浅色, or other modern color-family cues.
+description: Select, transform, recolor, segment, and export gradients from a wrap-gradient-derived OKLCH/OKLAB catalog. Use for semantic gradient requests such as 红色系渐变, 梦幻感渐变, 清爽渐变, 复古渐变, text/background gradient CSS, OKLCH segmentation, chroma/vividness changes, curve warping, image or brand-color matching, hue shifts, and iOS/Android/Figma export.
 ---
 
 # Better Gradient
 
-## Overview
+Use this skill to choose and transform gradients from the bundled wrap-gradient catalog. Prefer catalog matches before inventing new ramps. Use OKLCH for vivid, simple, UI-facing ramps; use OKLAB for multi-stop, atmospheric, family-driven backgrounds.
 
-Use the bundled offline preset pack to pick a close gradient before creating one from scratch.
-Match by hue family first, then choose interpolation mode: default to `oklch` for short vivid ramps, and switch to `oklab` for multi-stop atmospheric gradients when a structured family preset is the best match.
+## Fast Workflow
 
-## Default Rules
+1. Resolve the user's intent.
+   - Hue/family first: red, blue, green, warm, cool, dark, light.
+   - Mood second: 梦幻 -> blue-purple or light; 清爽 -> green-yellow or calm cool; 复古 -> warm, dark, muted; 红色系 -> red-yellow.
+   - Scope: 文字/text/headline -> text CSS; 背景/hero/page -> background CSS; 描边/border -> border CSS.
 
-- Resolve the user's direction by color family or mood before editing individual stops.
-- Prefer the named OKLAB families when the user clearly asks for a hue family such as warm sunset, blue-purple tech, green spring, contrast, dark, or light.
-- Prefer the OKLCH pair presets when the user wants a cleaner two-stop ramp, neon pop, high chroma accents, or simple UI gradients.
-- Keep the original stop positions unless the user explicitly asks to re-time the ramp.
-- If the closest preset is not exact, tweak the nearest preset instead of inventing unrelated colors.
-- Preserve the user's requested angle and output format. If they do not specify an angle, use `135deg`.
-
-## Workflow
-
-1. Resolve the direction.
-Map the request to a family or mood using `references/family-guide.md`. Start with the explicit hue words if present. If the user only gives mood words like "科技感" or "空气感", use the guide's aliases.
-
-2. Query the bundled catalog.
-Run `python3 scripts/find_presets.py` from the skill directory to rank presets and emit CSS.
-
-Common commands:
+2. Search presets before editing.
 
 ```bash
-python3 scripts/find_presets.py --query "蓝紫 科技感 hero 背景" --limit 3
-python3 scripts/find_presets.py --family green-yellow --mode oklab --limit 3
-python3 scripts/find_presets.py --query "美妆 空气感 浅色" --mode oklch --format css
-python3 scripts/find_presets.py --preset dream-haze --format css
+python3 scripts/gradient_tool.py find --query "梦幻感 背景" --limit 3
+python3 scripts/gradient_tool.py find --query "红色系 文字" --mode oklch --limit 3
+python3 scripts/gradient_tool.py find --family green-yellow --limit 3
 ```
 
-3. Choose interpolation mode.
-Use `oklch` for vivid, clean, two-stop, neon, or accent gradients.
-Use `oklab` for multi-stop, cinematic, editorial, atmospheric, or family-driven gradients.
-If the user asks for one mode explicitly, honor it.
+3. Transform only what the user asks to change.
 
-4. Deliver the result.
-Return the chosen preset name, why it matches the request, and the gradient code.
-If browser compatibility matters, also add a fallback gradient without `in oklch` or `in oklab`.
+```bash
+# Use OKLCH interpolation but emit plain segmented CSS for compatibility.
+python3 scripts/gradient_tool.py transform --preset dream-haze --oklch-segments --samples 12
 
-## Output Rules
+# Apply to text automatically.
+python3 scripts/gradient_tool.py transform --query "红色系 渐变 文字" --scope text --oklch-segments
 
-- Default CSS format for an OKLCH result:
-  `background: linear-gradient(135deg in oklch, #66FFF5 0%, #FF1A75 100%);`
-- Default CSS format for an OKLAB result:
-  `background: linear-gradient(135deg in oklab, #EBD5EB 0%, #A1BEE8 47.1%, #807BCA 100%);`
-- When the user wants SVG, translate the same stop list into `<linearGradient>` and preserve the stop percentages.
-- When the user provides brand colors, bias toward the nearest family and only adjust the endpoints or one middle stop.
-- When the user is vague, present two or three candidate directions from different families instead of pretending there is only one correct answer.
+# Make the top quieter / more empty.
+python3 scripts/gradient_tool.py transform --preset dream-haze --curve top-empty --samples 14
+
+# Make the top change more.
+python3 scripts/gradient_tool.py transform --preset dream-haze --curve top-active --samples 14
+
+# Make an existing CSS/RGB gradient more vivid in OKLCH.
+python3 scripts/gradient_tool.py transform --gradient "linear-gradient(90deg, rgb(230,120,90), #7755DD)" --vivid --samples 12
+
+# Shift the whole ramp toward a brand color using the midpoint as reference.
+python3 scripts/gradient_tool.py transform --preset dream-haze --shift-color "#3B82F6" --samples 12
+
+# Shift the whole ramp hue toward blue/green/red, preserving relative hue relationships.
+python3 scripts/gradient_tool.py transform --preset sunset-glow --shift-hue blue --samples 12
+
+# Export to platforms.
+python3 scripts/gradient_tool.py transform --preset dream-haze --format ios
+python3 scripts/gradient_tool.py transform --preset dream-haze --format android
+python3 scripts/gradient_tool.py transform --preset dream-haze --format figma
+python3 scripts/gradient_tool.py transform --preset dream-haze --format all
+```
+
+4. Return the chosen preset, the transformation, and final code. If the output uses OKLCH/OKLAB in CSS, include a plain fallback or segmented hex version unless the user explicitly wants only modern CSS.
+
+## Semantic Defaults
+
+- 红色系 / 暖色 / 夕阳 / 复古暖调: start with `red-yellow`.
+- 梦幻 / 科技 / 蓝紫 / 夜空: start with `blue-purple`.
+- 清爽 / 自然 / 春日 / 薄荷: start with `green-yellow`.
+- 复古 / 高级 / 胶片 / 暗调: start with `dark` or a muted `red-yellow` preset.
+- 空气感 / 护肤 / 柔和: start with `light`.
+- 撞色 / 活力 / 高饱和: start with `contrast` or OKLCH pair presets.
+
+Read `references/family-guide.md` when the user's wording is mood-heavy or ambiguous.
+
+## Curve Rules
+
+Use curve changes to redistribute where the gradient changes, not to recolor it.
+
+- "顶部更空", "上面留白", "顶部更安静": use `--curve top-empty`.
+- "上面变化更大", "顶部更丰富": use `--curve top-active`.
+- "底部更空": use `--curve bottom-empty`.
+- "更自然/柔和": use `--curve smooth`.
+- For exact control use `--custom-curve x1,y1,x2,y2`.
+
+The script samples the warped curve into hex stops, so the result is portable to CSS, iOS, Android, and Figma.
+
+## OKLCH Compatibility Rules
+
+When the user says "用 OKLCH 做这个渐变", "OKLCH 版本", or the target platform may not support CSS Color 4, use `--oklch-segments`. This computes the interpolation in OKLCH but emits regular hex stops. Default to 12 samples; raise to 16-20 for large hero backgrounds or visible banding.
+
+When the user says "更鲜艳", "更亮眼", "更高饱和", use `--vivid`. It converts stops to OKLCH, increases chroma, clips back to sRGB, and emits segmented stops. Do not increase chroma equally in RGB.
+
+## Color Shift Rules
+
+When the user provides a color or image and asks a gradient to become that color direction:
+
+- Default reference point is the gradient midpoint (`--reference 0.5`).
+- Compute the OKLCH delta from the midpoint color to the target color.
+- Apply that delta to every stop, preserving the original gradient's internal contrast and relative hue motion.
+- If the user says "更蓝/更绿/更红", use hue-only shifting with `--shift-hue blue|green|red` instead of applying one flat hue to all stops.
+- For images, use `--shift-image path/to/image`; this requires Pillow. If Pillow is unavailable, ask for a main hex color or install Pillow.
+
+## Export Rules
+
+- CSS background: default `--format css --scope background`.
+- CSS text: `--scope text`.
+- iOS: `--format ios` emits SwiftUI `LinearGradient` stops.
+- Android: `--format android` emits Kotlin Compose `Brush.linearGradient` with arbitrary stops.
+- Figma: `--format figma` emits a Figma Plugin API snippet that applies a linear gradient to selected nodes.
+- All platforms: `--format all`.
 
 ## Resources
 
-- `scripts/find_presets.py`
-Use this to rank presets by free-text query, family, or explicit preset id and to emit CSS or JSON.
-
-- `references/family-guide.md`
-Read this first when the request is about mood, style, or hue family rather than a known preset name.
-
-- `references/preset-catalog.json`
-This is the bundled offline preset catalog. Read it when you need the exact stop list or want to inspect the full preset inventory.
+- `scripts/gradient_tool.py`: primary tool for search, transform, curve warping, OKLCH segmentation, vividness, color/image shifting, and export.
+- `scripts/find_presets.py`: legacy preset search helper.
+- `references/family-guide.md`: semantic family mapping.
+- `references/preset-catalog.json`: exact preset inventory derived from wrap-gradient.
